@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>magnify</title>
+    <style>
+        .icon {
+            border: 1px solid black;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .icon::after {
+            content: '';
+            background: black;
+            width: 25px;
+            height: 1px;
+            position: absolute;
+            right: -15px;
+            bottom: -2px;
+            transform: rotate(45deg);
+        }
+
+        .add-h,
+        .add-s {
+            width: 30px;
+            height: 1px;
+            position: absolute;
+        }
+
+        .add-h {
+            background: black;
+            right: 50%;
+            bottom: 50%;
+            margin-right: -15px;
+        }
+
+        .add-s {
+            background: black;
+            transform: rotate(90deg);
+            top: 50%;
+            left: 50%;
+            margin-left: -15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="icon">
+        <div class="add-h"></div>
+        <div class="add-s"></div>
+    </div>
+
+
+</body>
+
+</html>

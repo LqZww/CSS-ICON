@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>minify</title>
+    <style>
+        .icon {
+            border: 1px solid black;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .icon::after {
+            content: '';
+            background: black;
+            width: 25px;
+            height: 1px;
+            position: absolute;
+            right: -15px;
+            bottom: -2px;
+            transform: rotate(45deg);
+        }
+
+        .add-h {
+            width: 30px;
+            height: 1px;
+            position: absolute;
+            background: black;
+            right: 50%;
+            bottom: 50%;
+            margin-right: -15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="icon">
+        <div class="add-h"></div>
+    </div>
+</body>
+
+</html>
