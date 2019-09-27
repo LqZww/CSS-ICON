@@ -5,3 +5,7 @@
 参考网站：https://cssicon.space/
 
 将不定期练习此网站并更新到GitHub上
+
+预览：http://zhouwanwen.top/CSS-ICON/   +   文件夹名    +   index.html
+
+例如：http://zhouwanwen.top/CSS-ICON/search/index.html
