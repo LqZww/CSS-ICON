@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>trash</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            height: 24px;
+            width: 24px;
+            margin: 50px;
+            border-bottom: 2px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            position: relative;
+            border-radius: 0 0 6px 6px;
+        }
+
+        div::after {
+            content: '';
+            background: black;
+            width: 42px;
+            height: 2px;
+            position: absolute;
+            top: -5px;
+            left: -11px;
+        }
+
+        div::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 5px;
+            top: -12px;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-top: 2px solid black;
+            border-radius: 6px 6px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>
